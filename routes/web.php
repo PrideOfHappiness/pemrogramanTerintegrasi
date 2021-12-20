@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AuthSekretarisController;
+use App\Models\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboard\navbar');
+})->middleware('guest');
+
+//Mahasiswa
+Route::get('/sekretaris', function(){
+    return view ('sekretaris\loginSekretaris');
+})->middleware('guest');
+//Route::get('/sekretaris/Home', 'AuthSekretarisController@dashboard')->name('dashboard')->middleware('auth');
+Route::post('/sekretaris/Home', 'AuthSekretarisController@login')->name('login');
+Route::post('/logoutSekretaris', 'AuthSekretarisController@logout')->name('logout');
+Route::get('/sekretaris/Home/BuatUndangan', function () {
+    return view('sekretaris\buatUndangan');
+})->middleware('auth');
+
+
+?>

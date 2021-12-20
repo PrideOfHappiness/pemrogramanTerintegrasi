@@ -12,10 +12,10 @@
                         </div>
                         <div class="card-body">
                             <h3 class="text-center mb-3">Sekretaris</h3>
-                            <form action="/Admin/Home" method="post">
+                            <form action="/sekretaris/Home" method="post">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="text" name="user_id" class="form-control mb-3" id="user_id" placeholder="NIK" autofocus required>
+                                    <input type="text" name="user_id" class="form-control mb-3" id="user_id" placeholder="User ID" autofocus required>
                                         @error('user_id')
                                         <div class="invalid-feedback">
                                             {{ $message }}

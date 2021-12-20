@@ -23,10 +23,10 @@
                     </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="/Admin">Admin</a></li>
-                <li><a class="dropdown-item" href="/Admin">Pejabat</a></li>
-                <li><a class="dropdown-item" href="/Admin">Sekretaris</a></li>
-		        <li><a class="dropdown-item" href="/Dosen">Panitia</a></li>
-		        <li><a class="dropdown-item" href="/Mahasiswa">Pengguna Lainnya</a></li>
+                <li><a class="dropdown-item" href="/pejabat">Pejabat</a></li>
+                <li><a class="dropdown-item" href="/sekretaris">Sekretaris</a></li>
+		        <li><a class="dropdown-item" href="/panitia">Panitia</a></li>
+		        <li><a class="dropdown-item" href="/user">Pengguna Lainnya</a></li>
             </ul>
         </li>
     </ul>
