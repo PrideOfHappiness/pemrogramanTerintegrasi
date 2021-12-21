@@ -26,7 +26,7 @@
                                 <div class="form-group">
                                     <input type="password" class="form-control mb-3" id="passMhs" name="password" placeholder="Password" required>
                                 </div>
-                                <input type="hidden" id="status" name="status" value="Pejabat">
+                                <input type="hidden" id="status" name="status" value="Sekretaris">
                                 <div class="form-group form-check mb-3">
                                     <input type="checkbox" class="form-check-input" id="rmbMe">
                                     <label class="form-check-label">Remember me</label>

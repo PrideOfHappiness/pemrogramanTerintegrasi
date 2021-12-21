@@ -21,7 +21,7 @@ class User extends Authenticatable
         'user_id',
         'name',
         'unit',
-        'jabatan',
+        'status',
         'alamat',
         'gender',
         'no_hp',

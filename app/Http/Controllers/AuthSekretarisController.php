@@ -49,4 +49,8 @@ class AuthSekretarisController extends Controller
         return redirect('/sekretaris');
     }
 
+    public function dashboard(){
+        return view("sekretaris/dashboard");
+    }
+
 }

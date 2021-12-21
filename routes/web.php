@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/sekretaris', function(){
     return view ('sekretaris\loginSekretaris');
 })->middleware('guest');
-//Route::get('/sekretaris/Home', 'AuthSekretarisController@dashboard')->name('dashboard')->middleware('auth');
+Route::get('/sekretaris/Home', 'AuthSekretarisController@dashboard')->name('dashboard')->middleware('auth');
 Route::post('/sekretaris/Home', 'AuthSekretarisController@login')->name('login');
 Route::post('/logoutSekretaris', 'AuthSekretarisController@logout')->name('logout');
 Route::get('/sekretaris/Home/BuatUndangan', function () {
