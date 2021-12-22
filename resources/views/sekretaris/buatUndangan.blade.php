@@ -3,7 +3,7 @@
 @section('layout')
     <h1>Undangan</h1>
     <div class="flex-row-reverse">
-        <a class="btn btn-primary" href="/Mahasiswa/Home/BuatSurat">Back</a>
+        <a class="btn btn-primary" href="/sekretaris/Home">Back</a>
     </div>
 @endsection
 

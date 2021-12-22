@@ -25,5 +25,5 @@ class Undangan extends Model
 
     ];
 
-    protected $table="pengirim";
+    protected $table="pengiriman";
 }

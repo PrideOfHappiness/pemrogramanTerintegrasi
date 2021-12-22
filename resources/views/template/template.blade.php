@@ -46,19 +46,18 @@
     </ul>
     </div>
     <div class="col-sm">
-    <h4>Dimohon saudara yang mendapat undangan ini untuk memberikan </h4>
+    <h4>Dimohon saudara yang mendapat undangan ini untuk memberikan konfirmasi kehadiran dengan menekan salah satu tombol yang tersedia diatas. </h4>
         <!--Tema Kegiatan,Penyelenggara Kegiatan, Tempat Kegiatan, Hari, Tanggal Pelaksanaan Kegiatan-->
     <br>
-    <h4>Demikian surat tugas ini dibuat untuk dapat dipergunakan sebagaimana perlunya.
-        Kepada penerima tugas setelah menyelesaikan tugas dimohon menyampaikan laporan kepada pemberi tugas.</h4>
+    <h4>Demikian surat undangan ini dibuat untuk dapat dipergunakan sebagaimana perlunya.</h4>
     <br>
     </div>
     <div align="right">
             <br><br><br><br><br>
             <h4>Yogyakarta, {{ date('d F Y') }}<h4>
-            <h4>_________,</h4><br><br><br><br>
+            <h4>Sekretaris,</h4><br><br><br><br>
             <h4><b><u>_________________________</u></b></h4>
-            <h4>____________________</h4>
+            <h4>{{$name}}</h4>
     </div>
   </div>
 </div>

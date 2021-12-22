@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use Validator;
 use App\Models\Undangan;
 use App\Models\User;
+use Dompdf\Dompdf;
+
 
 class UndanganController extends Controller{
     public function submit(Request $request){
@@ -19,14 +21,28 @@ class UndanganController extends Controller{
             'user_id' => $request->user_id,
             'name' => $request->name,
             'event' => $request->event,
-            'waktu' => $request->eaktu,
+            'waktu' => $request->waktu,
             'awal' => $request->awal,
             'selesai' => $request->selesai,
             'ruangan' => $request->ruangan,
             'status' => $request->status,
             'penerima' => $request->penerima,
         ]);
-        return redirect('/Mahasiswa/Home');
+        return redirect('/sekretaris/Home/ListUndangan');
     }
+
+    public function showUndangan(){
+        $undangan = Undangan::get();
+        return view('sekretaris\listUndangan', compact('undangan'));
+    }
+
+    public function detail(){
+        $data_user = User::where('user_id', $item->user_id)->get();
+        $nim = explode(",", $item->user_id);
+        $name = explode(",", $item->name);
+        return view('TemplateSurat\detailTugas', compact('data_user', 'nim', 'name'));
+    }
+
+
 }
 ?>

@@ -14,6 +14,10 @@ use App\Models\User;
 
 class AuthSekretarisController extends Controller
 {
+
+    public function home(){
+        return view ('dashboard\navbar');
+    }
     public function showFormLogin()
     {
         return view('sekretaris/loginSekretaris');

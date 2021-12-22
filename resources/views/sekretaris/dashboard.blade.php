@@ -38,7 +38,7 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/Mahasiswa/Home/ListSurat">
+    <a class="nav-link" href="/sekretaris/Home/ListUndangan">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
             Undangan Saya
     </a>
@@ -78,5 +78,5 @@
 @endsection
 
 @section('dashboard')
-<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/Mahasiswa/Home">SI TUNTAS UKDW</a>
+<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/sekretaris/Home">SI TUNTAS UKDW</a>
 @endsection

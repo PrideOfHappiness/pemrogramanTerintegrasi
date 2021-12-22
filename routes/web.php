@@ -29,6 +29,8 @@ Route::get('/sekretaris/Home/BuatUndangan', function () {
     return view('sekretaris\buatUndangan');
 })->middleware('auth');
 Route::post('sekretaris/Home/BuatUndangan/Undangan', 'UndanganController@submit')->name("submit")->middleware('auth');
+Route::get('/sekretaris/Home/ListUndangan', 'UndanganController@showUndangan')->name('showUndangan')->middleware('auth');
+
 
 
 ?>
