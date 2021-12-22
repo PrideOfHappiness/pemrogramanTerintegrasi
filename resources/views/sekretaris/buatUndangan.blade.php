@@ -11,7 +11,7 @@
     <form action="/sekretaris/Home/BuatUndangan/Undangan" method="post">
         @csrf
         <div class="control-group input-group mb-3">
-                <input type="text" class="form-control" id="user_id" name="user_id" required value="{{ auth()->user()->nim }}">
+                <input type="text" class="form-control" id="user_id" name="user_id" required value="{{ auth()->user()->user_id }}">
                 <input type="text" class="form-control" id="name" name="name" required value="{{ auth()->user()->name }}">
         </div>
         <div class="mb-3">

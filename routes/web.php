@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthSekretarisController;
+use App\http\Controllers\UndanganController;
 use App\Models\User;
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,11 @@ use App\Models\User;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('dashboard\navbar');
 })->middleware('guest');
 
-//Mahasiswa
+//Sekretaris
 Route::get('/sekretaris', function(){
     return view ('sekretaris\loginSekretaris');
 })->middleware('guest');
@@ -28,6 +28,7 @@ Route::post('/logoutSekretaris', 'AuthSekretarisController@logout')->name('logou
 Route::get('/sekretaris/Home/BuatUndangan', function () {
     return view('sekretaris\buatUndangan');
 })->middleware('auth');
+Route::post('sekretaris/Home/BuatUndangan/Undangan', 'UndanganController@submit')->name("submit")->middleware('auth');
 
 
 ?>
